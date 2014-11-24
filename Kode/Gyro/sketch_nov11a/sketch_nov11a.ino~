@@ -1,5 +1,5 @@
 int gyroPin = 0, sampleSize = 10;
-float gyroVoltage = 3.3, gyroZero = 1.65, gyroSensitivity = 0.057, gyroRate, gyroCali; //gyroRate og gyroCali får ikke en verdi, man sier på en måte "disse finnes, men har ikke en verdi enda". Vi gjør dette for at 'scope`et' til variabelen skal være over hele programmet, altså ikke bare inne i en funksjon
+float gyroVoltage = 3.3, gyroZero = 1.65, gyroSensitivity = 0.057, gyroRate, gyroCali;
 
 void setup() {
    pinMode(13, OUTPUT);
