@@ -1,13 +1,19 @@
 int gyroPin = 0, sampleSize = 10;
 float gyroVoltage = 3.3, gyroZero = 1.65, gyroSensitivity = 0.057, gyroRate, gyroCali; //gyroRate og gyroCali får ikke en verdi, man sier på en måte "disse finnes, men har ikke en verdi enda". Vi gjør dette for at 'scope`et' til variabelen skal være over hele programmet, altså ikke bare inne i en funksjon
 
+
+/*
+Gyro sensitivity: V/g (volt per 9.81m/s^2). 
+Gyro zero: Hva gyro outputter når g = 0.
+Gyro Voltage: V når g = 16
+ */
 void setup() {
    pinMode(13, OUTPUT);
    analogReference(EXTERNAL); 
    Serial.begin(9600);
    digitalWrite(13, HIGH);
    delay(1000);
-   calibrate();
+   calibrate();//funksjon definert lengre ned
    digitalWrite(13, LOW);
 }
 
