@@ -43,4 +43,4 @@ int getSample(int pin) {
     }
     
     return tmp/sampleSize;
-}
+}
