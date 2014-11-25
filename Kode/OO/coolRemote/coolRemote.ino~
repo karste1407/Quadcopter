@@ -9,5 +9,5 @@ void setup() {
 void loop() {
      Serial.print(yaw.getValue());
      Serial.print(" : ");
-     Serial.println(collective.getValue());
+     Serial.println(collective.getDiff());
 }

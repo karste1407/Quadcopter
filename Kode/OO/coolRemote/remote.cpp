@@ -3,15 +3,9 @@
 
 Remote::Remote(int pin){
   _pin = pin;
-  _diff = 1;
+  _last = pulseIn(_pin, HIGH);
 }
 
 int Remote::getValue() {
-  int r = pulseIn(_pin, HIGH);
-  _diff = _diff - r;
-  return r;
-}
-
-int Remote::getDiff() {
-  return _diff;
+  return = pulseIn(_pin, HIGH);
 }
