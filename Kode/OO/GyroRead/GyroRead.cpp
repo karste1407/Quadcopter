@@ -9,6 +9,8 @@ int GyroRead::getRawValue() {
   return analogRead(_pin);
 }
 
-int GyroRead::getG() {
+int GyroRead::getValue() {
   int raw = getRawValue();
+  //gjør om til vanlig
+  return raw;
 }

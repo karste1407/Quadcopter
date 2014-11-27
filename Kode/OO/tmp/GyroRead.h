@@ -6,4 +6,7 @@ class GyroRead {
 
  private:
   int _pin;
+  float gyroVoltage;
+  float gyroZero;
+  float gyroSensitivity;
 };
